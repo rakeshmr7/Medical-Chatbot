@@ -1,0 +1,234 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #004d99;
+    overflow: hidden;
+    padding: 1em;
+    display: flex;
+    justify-content: flex-end;
+    /* Aligns the navbar options to the right */
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.navbar a:hover {
+    background-color: #003366;
+}
+
+.navbar a.active {
+    background-color: #80dfff;
+    color: black;
+}
+
+/* Side Panel */
+.side-panel {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    background-color: #004d99;
+}
+
+.side-panel-btn {
+    background-color: #004d99;
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.side-panel-content {
+    display: none;
+    background-color: #003366;
+    padding: 10px;
+    position: absolute;
+    left: 50px;
+    top: 0;
+    height: 100%;
+    width: 200px;
+}
+
+.side-panel-content a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.side-panel-content a:hover {
+    background-color: #80dfff;
+    color: black;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 60px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #004d99;
+    margin-bottom: 200px;
+    text-align: center;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+}
+
+.option-box {
+    background-color: #80dfff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.option-box:hover {
+    transform: scale(1.1);
+}
+
+/* Profile and Edit Profile Pages */
+.profile {
+    margin-left: 60px;
+    padding: 20px;
+}
+
+
+.profile h2,
+.edit-profile-container h2 {
+    font-size: 2em;
+    color: #004d99;
+}
+
+.edit,
+.container {
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+
+}
+
+.profile,
+.edit-profile-container {
+    background-color: rgb(228, 225, 225);
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #004d99;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #003366;
+}
+
+/* Disable the cursor for the email input */
+.email {
+    cursor: not-allowed;
+    /* Changes the cursor to a 'not-allowed' symbol */
+    background-color: #f0f0f0;
+    /* Optional: Change the background to make it look disabled */
+}
+
+/* Floating Boxes */
+.floating-box {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #80dfff;
+    border-radius: 8px;
+    animation: float 4s infinite ease-in-out;
+}
+
+.floating-box1 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #80dfff;
+    border-radius: 8px;
+    animation: float 4s infinite ease-in-out;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
+.floating-box1:nth-child(1) {
+    top: 65%;
+    left: 50%;
+    animation-delay: 1s;
+}
+
+.floating-box1:nth-child(2) {
+    top: 65%;
+    left: 82%;
+    animation-delay: 2s;
+}
+
+.floating-box1:nth-child(3) {
+    top: 65%;
+    left: 18%;
+    animation-delay: 0s;
+}
+
+.floating-box:nth-child(1) {
+    top: 20%;
+    left: 80%;
+    animation-delay: 0s;
+}
+
+.floating-box:nth-child(2) {
+    top: 40%;
+    left: 70%;
+    animation-delay: 1s;
+}

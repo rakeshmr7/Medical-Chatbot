@@ -1,0 +1,122 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #e9e4f0 0%, #d3cce3 100%);
+}
+
+h1 {
+    color: #4a4e69;
+}
+
+p {
+    color: #4a4e69;
+    font-size: 16px;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #004d99;
+    overflow: hidden;
+    padding: 1em;
+    display: flex;
+    justify-content: flex-end;
+    /* Aligns the navbar options to the right */
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.navbar a:hover {
+    background-color: #003366;
+}
+
+.navbar a.active {
+    background-color: #80dfff;
+    color: black;
+}
+
+/* Side Panel */
+.side-panel {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    background-color: #004d99;
+}
+
+.side-panel-btn {
+    background-color: #004d99;
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.side-panel-content {
+    display: none;
+    background-color: #003366;
+    padding: 10px;
+    position: absolute;
+    left: 50px;
+    top: 0;
+    height: 100%;
+    width: 200px;
+}
+
+.side-panel-content a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.side-panel-content a:hover {
+    background-color: #80dfff;
+    color: black;
+}
+
+/* Container for Upload Section */
+.container {
+    width: 60%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.upload-section {
+    margin-top: 20px;
+}
+
+input[type="file"] {
+    padding: 10px;
+    border: 2px solid #9a8c98;
+    border-radius: 5px;
+    background-color: #f2e9e4;
+    font-size: 16px;
+}
+
+button.upload-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #4a4e69;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button.upload-btn:hover {
+    background-color: #9a8c98;
+}
